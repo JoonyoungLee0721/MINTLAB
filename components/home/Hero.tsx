@@ -75,7 +75,7 @@ export default function Hero() {
             loop
             playsInline
           >
-            <source src="/images/Main.mp4" type="video/mp4" />
+            <source src="/MINTLAB/images/Main.mp4" type="video/mp4" />
           </video>
         </motion.div>
 

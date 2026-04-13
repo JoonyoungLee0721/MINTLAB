@@ -10,16 +10,16 @@ interface VideoItem {
 
 const areaVideos: Record<string, VideoItem[]> = {
   "healthcare-intelligence": [
-    { src: "/images/SparseIMUs.mp4", label: "Pose Estimation using Sparse IMUs" },
-    { src: "/images/AnkleExosuit.mp4", label: "Ankle Exosuit for Post-Stroke Rehabilitation" },
-    { src: "/images/IntentionDetection.mp4", label: "Intention Detection for Wearable Robot Hand" },
-    { src: "/images/Humanoid_IMU_Teleoperation_DEMO.mp4", label: "Humanoid IMU Teleoperation" },
+    { src: "/MINTLAB/images/SparseIMUs.mp4", label: "Pose Estimation using Sparse IMUs" },
+    { src: "/MINTLAB/images/AnkleExosuit.mp4", label: "Ankle Exosuit for Post-Stroke Rehabilitation" },
+    { src: "/MINTLAB/images/IntentionDetection.mp4", label: "Intention Detection for Wearable Robot Hand" },
+    { src: "/MINTLAB/images/Humanoid_IMU_Teleoperation_DEMO.mp4", label: "Humanoid IMU Teleoperation" },
   ],
   "robot-intelligence": [
-    { src: "/images/VLA_DEMO.mp4", label: "Vision-Language-Action Model" },
-    { src: "/images/TactileDEMO.mp4", label: "Robotic Manipulation with Tactile Sensor" },
-    { src: "/images/HumanoidDEMO.mp4", label: "Humanoid Control" },
-    { src: "/images/PocketRacer.mp4", label: "Autonomous Vehicles and Racing" },
+    { src: "/MINTLAB/images/VLA_DEMO.mp4", label: "Vision-Language-Action Model" },
+    { src: "/MINTLAB/images/TactileDEMO.mp4", label: "Robotic Manipulation with Tactile Sensor" },
+    { src: "/MINTLAB/images/HumanoidDEMO.mp4", label: "Humanoid Control" },
+    { src: "/MINTLAB/images/PocketRacer.mp4", label: "Autonomous Vehicles and Racing" },
   ],
 };
 
