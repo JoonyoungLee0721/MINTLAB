@@ -54,18 +54,12 @@ export default async function ResearchDetailPage({ params }: Props) {
         </h1>
 
         {areaVideos[area.id] && areaVideos[area.id].length > 0 && (
-          <div
-            className="grid gap-4 mb-10"
-            style={{
-              gridTemplateColumns: `repeat(${areaVideos[area.id].length}, minmax(0, 1fr))`,
-            }}
-          >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
             {areaVideos[area.id].map((video) => (
               <div key={video.src} className="rounded-xl overflow-hidden border border-neutral-200">
                 <video
                   className="w-full"
-                  autoPlay
-                  loop
+                  controls
                   muted
                   playsInline
                   preload="auto"
@@ -79,6 +73,7 @@ export default async function ResearchDetailPage({ params }: Props) {
             ))}
           </div>
         )}
+        
 
         <p className="text-base text-neutral-600 leading-relaxed mb-10">
           {area.description}
