@@ -40,7 +40,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/">
           <Image
-            src="/images/mitlab_logo_08052.png"
+            src="/MINTLAB/images/mitlab_logo_08052.png"
             alt="MINT Lab"
             width={675}
             height={119}

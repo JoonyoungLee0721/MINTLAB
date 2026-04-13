@@ -25,7 +25,7 @@ export const newsItems: NewsItem[] = [
     summary:
       "Our lab members gathered in Yeosu for a two-day workshop (Dec 22–23) filled with research discussions, team activities, and collaborative planning for the year ahead.",
     tags: ["Workshop", "Lab Activity"],
-    images: ["/images/NewsWorkshop.jpg"],
+    images: ["/MINTLAB/images/NewsWorkshop.jpg"],
   },
   {
     id: "scholarships-2025",
@@ -42,7 +42,7 @@ export const newsItems: NewsItem[] = [
     summary:
       "Our students Minseok Kim, Yujin Cho, Jimin Yun, and Jungho Shin participated in the International Robot Olympiad Committee Artificial Intelligence Autonomous Racing Competition and won third runner-up prizes.",
     tags: ["Award", "Competition"],
-    images: ["/images/NewsIROC.jpg", "/images/NewsIROC2.jpg"],
+    images: ["/MINTLAB/images/NewsIROC.jpg", "/MINTLAB/images/NewsIROC2.jpg"],
   },
   {
     id: "gabriel-guest-2025",
@@ -51,7 +51,7 @@ export const newsItems: NewsItem[] = [
     summary:
       "We hosted Gabriel Fernandez, CEO and co-founder of VEQdrive, as a guest lecturer at Korea University.",
     tags: ["Guest Lecture"],
-    images: ["/images/NewsGab.jpg"],
+    images: ["/MINTLAB/images/NewsGab.jpg"],
   },
   {
     id: "mayor-visit-2025",
@@ -60,7 +60,7 @@ export const newsItems: NewsItem[] = [
     summary:
       "We hosted Se-hoon Oh, Mayor of Seoul Special Metropolitan City, as a visitor. We demonstrated our research to the Mayor and his delegation.",
     tags: ["Lab Visit"],
-    images: ["/images/NewsOhsehoon.jpg"],
+    images: ["/MINTLAB/images/NewsOhsehoon.jpg"],
     links: [
       { label: "Video", url: "https://www.youtube.com/watch?v=_9lV_978O_k" },
       { label: "Article", url: "https://n.news.naver.com/article/003/0013505818?sid=100" },
@@ -74,7 +74,7 @@ export const newsItems: NewsItem[] = [
     summary:
       "We hosted Douglas Weber, Akhtar and Bhutta Professor of Carnegie Mellon University, as a guest lecturer at Korea University.",
     tags: ["Guest Lecture"],
-    images: ["/images/NewsWeber.jpg"],
+    images: ["/MINTLAB/images/NewsWeber.jpg"],
   },
   {
     id: "k-humanoid-2025",
@@ -82,7 +82,7 @@ export const newsItems: NewsItem[] = [
     title: "MINT Lab Joins the Federation of K-Humanoid",
     summary: "We are proud members of the Federation of K-Humanoid.",
     tags: ["Consortium"],
-    images: ["/images/K-Humanoid.jpg"],
+    images: ["/MINTLAB/images/K-Humanoid.jpg"],
     links: [{ label: "News Article", url: "https://n.news.naver.com/mnews/article/092/0002370149" }],
   },
   {
@@ -92,7 +92,7 @@ export const newsItems: NewsItem[] = [
     summary:
       "We hosted a workshop titled \"Enhancing Human Mobility: From computer vision-based motion tracking to wearable assistive robot control\" at the 2025 IEEE International Conference on Robotics and Automation (ICRA) in Atlanta, GA, USA.",
     tags: ["Workshop", "Conference"],
-    images: ["/images/NewsICRA25.png"],
+    images: ["/MINTLAB/images/NewsICRA25.png"],
     links: [{ label: "Workshop Website", url: "https://sites.google.com/andrew.cmu.edu/icra2025-vision-wearable-robot/home" }],
     participants: {
       organizers: [
@@ -121,7 +121,7 @@ export const newsItems: NewsItem[] = [
     summary:
       "We hosted a workshop titled \"AI-based Estimation and Control of Wearable Robotic Systems for Enhancing Human Mobility\" at the 2024 IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics (BIOROB) in Heidelberg, Germany.",
     tags: ["Workshop", "Conference"],
-    images: ["/images/NewsBiorob24.jpg"],
+    images: ["/MINTLAB/images/NewsBiorob24.jpg"],
     links: [{ label: "Workshop Website", url: "https://sites.google.com/view/biorob-wearable-robotics/home" }],
     participants: {
       organizers: [
@@ -146,7 +146,7 @@ export const newsItems: NewsItem[] = [
     summary:
       "We hosted a workshop titled \"Supervised Autonomy: How to share human-robot interaction from the body to the brain\" at the 2024 IEEE International Conference on Robotics and Automation (ICRA) in Yokohama, Japan.",
     tags: ["Workshop", "Conference"],
-    images: ["/images/NewsICRA24.jpg"],
+    images: ["/MINTLAB/images/NewsICRA24.jpg"],
     participants: {
       organizers: [
         { name: "Antonio Bicchi", affiliation: "IIT" },
@@ -172,7 +172,7 @@ export const newsItems: NewsItem[] = [
     summary:
       "We hosted a workshop titled \"Computer Vision for Wearable Robotics\" at the 2023 IEEE International Conference on Robotics and Automation (ICRA) in London.",
     tags: ["Workshop", "Conference"],
-    images: ["/images/NewsICRA23.jpg"],
+    images: ["/MINTLAB/images/NewsICRA23.jpg"],
     links: [{ label: "Workshop Website", url: "https://projects.iq.harvard.edu/visionwearablerobotics/home" }],
     participants: {
       organizers: [

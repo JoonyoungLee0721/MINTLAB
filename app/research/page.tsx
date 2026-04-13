@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 };
 
 const areaImages: Record<string, string> = {
-  "healthcare-intelligence": "/images/Wearable.png",
-  "robot-intelligence": "/images/3DRecon.jpg",
+  "healthcare-intelligence": "/MINTLAB/images/Wearable.png",
+  "robot-intelligence": "/MINTLAB/images/3DRecon.jpg",
 };
 
 const areaSummary: Record<string, string> = {
