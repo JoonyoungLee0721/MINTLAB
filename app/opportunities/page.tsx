@@ -12,7 +12,6 @@ const positions = [
   {
     id: "graduate",
     title: "Graduate Students",
-    icon: "🎓",
     description:
       "We are recruiting motivated graduate students (PhD and MS) to work at the frontiers of Physical AI, foundation models, and world models.",
     background: [
@@ -25,7 +24,6 @@ const positions = [
   {
     id: "postdoc",
     title: "Postdoctoral Researchers",
-    icon: "🔬",
     description:
       "We have postdoc openings for exceptional candidates who have completed (or are near completion of) a PhD in robotics, machine learning, computer vision, or a related field. Postdocs lead independent research projects and mentor graduate students.",
     background: [
@@ -40,7 +38,6 @@ const positions = [
   {
     id: "undergrad",
     title: "Undergraduate Researchers",
-    icon: "⚙️",
     description:
       "We offer undergraduate research opportunities for students who want hands-on experience in Physical AI research. Projects span robot learning, wearable sensing, computer vision, autonomous vehicles, and healthcare applications.",
     background: [],
