@@ -53,6 +53,10 @@ export default async function ResearchDetailPage({ params }: Props) {
           {area.title}
         </h1>
 
+        <p className="text-base text-neutral-600 leading-relaxed mb-10">
+          {area.description}
+        </p>
+
         {areaVideos[area.id] && areaVideos[area.id].length > 0 && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
             {areaVideos[area.id].map((video) => (
@@ -73,11 +77,6 @@ export default async function ResearchDetailPage({ params }: Props) {
             ))}
           </div>
         )}
-        
-
-        <p className="text-base text-neutral-600 leading-relaxed mb-10">
-          {area.description}
-        </p>
 
         <div className="mb-10">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-neutral-400 mb-4 pb-2 border-b border-neutral-100">
