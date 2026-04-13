@@ -1,0 +1,244 @@
+import type { Metadata } from "next";
+import SectionHeader from "@/components/ui/SectionHeader";
+import Badge from "@/components/ui/Badge";
+import { BookOpen, Clock, Users, ExternalLink } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Courses",
+  description: "Courses taught by Prof. Alex Morgan at the Physical AI Lab.",
+};
+
+interface Course {
+  id: string;
+  code: string;
+  title: string;
+  semester: string;
+  level: "Undergraduate" | "Graduate" | "Mixed";
+  credits: number;
+  enrollment: number;
+  description: string;
+  topics: string[];
+  tags: string[];
+  syllabus?: string;
+  prerequisites?: string;
+}
+
+const courses: Course[] = [
+  {
+    id: "eecs-489",
+    code: "EECS 489",
+    title: "Introduction to Robotics and Physical AI",
+    semester: "Fall 2024",
+    level: "Mixed",
+    credits: 4,
+    enrollment: 60,
+    description:
+      "An introduction to the principles of robotics and physically-grounded AI systems. Students will learn the mathematical foundations of robot kinematics, dynamics, sensing, and control, with a focus on how modern machine learning can be integrated into each layer of the robot stack.",
+    topics: [
+      "Rigid body kinematics and dynamics",
+      "Sensor models: cameras, IMU, tactile, proprioception",
+      "Motion planning and trajectory optimization",
+      "Classical vs. learning-based control",
+      "Sim-to-real transfer",
+      "Robot learning from demonstration",
+    ],
+    tags: ["Robotics", "Control", "Machine Learning"],
+    prerequisites: "Linear algebra, probability, Python programming",
+    syllabus: "#",
+  },
+  {
+    id: "eecs-589",
+    code: "EECS 589",
+    title: "Embodied Intelligence and Robot Learning",
+    semester: "Winter 2025",
+    level: "Graduate",
+    credits: 3,
+    enrollment: 24,
+    description:
+      "A graduate seminar on cutting-edge research in embodied intelligence. Topics span foundation models for robotics, vision-language-action systems, reinforcement learning for manipulation and locomotion, and world models for physical agents. Students read and present recent papers and complete an original research project.",
+    topics: [
+      "Vision-Language-Action (VLA) models",
+      "Imitation learning and behavior cloning",
+      "Deep reinforcement learning for continuous control",
+      "Physical world models and differentiable simulation",
+      "Humanoid learning and whole-body control",
+      "Multimodal sensing and tactile intelligence",
+    ],
+    tags: ["Foundation Models", "RL", "Humanoid", "Research Seminar"],
+    prerequisites: "Graduate standing; deep learning background recommended",
+    syllabus: "#",
+  },
+  {
+    id: "eecs-391",
+    code: "EECS 391",
+    title: "Wearable AI and Healthcare Robotics",
+    semester: "Spring 2025",
+    level: "Graduate",
+    credits: 3,
+    enrollment: 18,
+    description:
+      "This course explores the intersection of AI, wearable sensing, and healthcare robotics. We study how multimodal physiological signals (EMG, IMU, PPG) are processed and used to drive intelligent assistive devices such as exoskeletons, prosthetics, and rehabilitation robots. Emphasis on clinical translation and responsible AI.",
+    topics: [
+      "Physiological signal processing (EMG, IMU, PPG)",
+      "Human intent recognition and activity classification",
+      "Exoskeleton and prosthetics control",
+      "Adaptive gait assistance and rehabilitation",
+      "Regulatory and ethical considerations in medical AI",
+      "Clinical validation and deployment",
+    ],
+    tags: ["Wearable", "Healthcare", "EMG", "Rehabilitation"],
+    prerequisites: "Signal processing or machine learning; graduate standing",
+    syllabus: "#",
+  },
+  {
+    id: "eecs-290",
+    code: "EECS 290",
+    title: "Robot Programming Lab",
+    semester: "Fall 2024",
+    level: "Undergraduate",
+    credits: 2,
+    enrollment: 30,
+    description:
+      "A hands-on lab course where students program real robot platforms including robotic arms and wheeled mobile robots. Assignments progress from basic joint control to pick-and-place tasks, autonomous navigation, and a final open-ended project. ROS 2 and Python are used throughout.",
+    topics: [
+      "ROS 2 fundamentals and architecture",
+      "Forward and inverse kinematics",
+      "Sensor integration and SLAM basics",
+      "Vision-based object detection and grasping",
+      "Path planning with MoveIt",
+      "Open-ended team project",
+    ],
+    tags: ["ROS 2", "Hands-on", "Manipulation", "Navigation"],
+    prerequisites: "EECS 489 or instructor permission",
+    syllabus: "#",
+  },
+];
+
+const levelColors: Record<Course["level"], string> = {
+  Undergraduate: "bg-emerald-50 text-emerald-700 border border-emerald-200",
+  Graduate: "bg-blue-50 text-blue-700 border border-blue-200",
+  Mixed: "bg-violet-50 text-violet-700 border border-violet-200",
+};
+
+export default function CoursesPage() {
+  const current = courses.filter((c) =>
+    c.semester.includes("2025") || c.semester === "Fall 2024"
+  );
+  const past = courses.filter(
+    (c) => !current.find((cur) => cur.id === c.id)
+  );
+
+  return (
+    <div className="pt-28 pb-20 px-6">
+      <div className="max-w-4xl mx-auto">
+        <SectionHeader
+          label="Teaching"
+          title="Courses"
+          description="Courses taught by Prof. Alex Morgan covering robotics, embodied AI, and wearable intelligence."
+        />
+
+        <div className="space-y-6">
+          {current.map((course) => (
+            <CourseCard key={course.id} course={course} />
+          ))}
+        </div>
+
+        {past.length > 0 && (
+          <div className="mt-16">
+            <h2 className="text-xs font-semibold uppercase tracking-widest text-neutral-400 mb-6 pb-3 border-b border-neutral-100">
+              Past Courses
+            </h2>
+            <div className="space-y-6">
+              {past.map((course) => (
+                <CourseCard key={course.id} course={course} />
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function CourseCard({ course }: { course: Course }) {
+  return (
+    <div className="border border-neutral-200 rounded-xl p-7 hover:border-neutral-300 transition-colors">
+      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-4">
+        <div>
+          <div className="flex items-center gap-2 mb-1">
+            <span className="text-xs font-mono font-semibold text-[#1e3a5f]">
+              {course.code}
+            </span>
+            <span
+              className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${levelColors[course.level]}`}
+            >
+              {course.level}
+            </span>
+          </div>
+          <h2 className="text-base font-semibold text-neutral-900">
+            {course.title}
+          </h2>
+        </div>
+        {course.syllabus && (
+          <a
+            href={course.syllabus}
+            className="inline-flex items-center gap-1.5 text-xs text-[#1e3a5f] border border-[#1e3a5f]/30 px-3 py-1.5 rounded hover:bg-[#1e3a5f]/5 transition-colors shrink-0"
+          >
+            <BookOpen size={12} />
+            Syllabus
+            <ExternalLink size={10} />
+          </a>
+        )}
+      </div>
+
+      <div className="flex flex-wrap gap-4 text-xs text-neutral-500 mb-4">
+        <span className="flex items-center gap-1">
+          <Clock size={12} />
+          {course.semester} · {course.credits} credits
+        </span>
+        <span className="flex items-center gap-1">
+          <Users size={12} />
+          ~{course.enrollment} students
+        </span>
+      </div>
+
+      <p className="text-sm text-neutral-600 leading-relaxed mb-5">
+        {course.description}
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+        <div>
+          <h3 className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">
+            Topics Covered
+          </h3>
+          <ul className="space-y-1">
+            {course.topics.map((topic) => (
+              <li key={topic} className="flex items-start gap-2 text-xs text-neutral-600">
+                <span className="mt-1.5 w-1 h-1 rounded-full bg-[#1e3a5f] shrink-0" />
+                {topic}
+              </li>
+            ))}
+          </ul>
+        </div>
+        {course.prerequisites && (
+          <div>
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">
+              Prerequisites
+            </h3>
+            <p className="text-xs text-neutral-600 leading-relaxed">
+              {course.prerequisites}
+            </p>
+          </div>
+        )}
+      </div>
+
+      <div className="flex flex-wrap gap-1.5">
+        {course.tags.map((tag) => (
+          <Badge key={tag} variant="accent">
+            {tag}
+          </Badge>
+        ))}
+      </div>
+    </div>
+  );
+}

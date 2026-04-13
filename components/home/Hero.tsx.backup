@@ -1,0 +1,61 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { ArrowRight, Mail } from "lucide-react";
+
+export default function Hero() {
+  return (
+    <section className="pt-32 pb-20 px-6">
+      <div className="max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="max-w-3xl"
+        >
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#1e3a5f] mb-4">
+            Physical AI Lab
+          </p>
+          <h1 className="text-4xl sm:text-5xl font-semibold text-neutral-900 leading-tight mb-4">
+            Prof. Alex Morgan
+          </h1>
+          <p className="text-lg text-neutral-500 mb-2">
+            Associate Professor of Robotics and AI
+          </p>
+          <p className="text-base text-neutral-400 mb-8">
+            Department of Electrical Engineering and Computer Science
+            <br />
+            University of Technology
+          </p>
+          <p className="text-lg text-neutral-700 leading-relaxed mb-10 max-w-2xl border-l-2 border-[#1e3a5f] pl-4">
+            We study Physical AI systems that understand, interact with, and
+            learn from the real world.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/research"
+              className="inline-flex items-center gap-2 bg-[#1e3a5f] text-white px-5 py-2.5 rounded text-sm font-medium hover:bg-[#2d5a9e] transition-colors"
+            >
+              Our Research
+              <ArrowRight size={16} />
+            </Link>
+            <a
+              href="mailto:amorgan@university.edu"
+              className="inline-flex items-center gap-2 border border-neutral-300 text-neutral-700 px-5 py-2.5 rounded text-sm font-medium hover:border-neutral-400 transition-colors"
+            >
+              <Mail size={16} />
+              Contact
+            </a>
+            <Link
+              href="/opportunities"
+              className="inline-flex items-center gap-2 border border-neutral-300 text-neutral-700 px-5 py-2.5 rounded text-sm font-medium hover:border-neutral-400 transition-colors"
+            >
+              Join the Lab
+            </Link>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,147 @@
+import type { Metadata } from "next";
+import SectionHeader from "@/components/ui/SectionHeader";
+import { Mail, CheckCircle } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Opportunities",
+  description:
+    "Join the Physical AI Lab — open positions for PhD students, postdocs, and researchers.",
+};
+
+const positions = [
+  {
+    id: "phd",
+    title: "PhD Students",
+    icon: "🎓",
+    description:
+      "We are recruiting motivated PhD students with a passion for pushing the frontiers of Physical AI. Students will work on cutting-edge research problems with direct access to robot hardware, compute resources, and a collaborative international network.",
+    background: [
+      "Strong fundamentals in machine learning, robotics, or control theory",
+      "Programming proficiency in Python; experience with PyTorch or JAX preferred",
+      "Prior research experience (papers, thesis, or independent projects)",
+      "Interest in at least one of: embodied AI, humanoid robotics, wearable systems, or multimodal sensing",
+    ],
+    instructions:
+      "Apply through the university graduate admissions portal and mention Prof. Morgan's lab in your statement of purpose. Email amorgan@university.edu with subject \"[PhD Application] Your Name\" attaching your CV, transcripts, and a brief research statement.",
+  },
+  {
+    id: "postdoc",
+    title: "Postdoctoral Researchers",
+    icon: "🔬",
+    description:
+      "We occasionally have postdoc openings for exceptional candidates who have completed (or are near completion of) a PhD in robotics, machine learning, or a related field. Postdocs lead independent research projects and mentor graduate students.",
+    background: [
+      "PhD in robotics, computer science, electrical engineering, or related field",
+      "Strong publication record at top venues (RSS, ICRA, CoRL, NeurIPS, ICML, etc.)",
+      "Demonstrated ability to lead independent research",
+      "Experience with real robot systems is a strong plus",
+    ],
+    instructions:
+      "Email amorgan@university.edu with subject \"[Postdoc Application] Your Name\" including your CV, a research statement (2 pages max), and three representative publications.",
+  },
+  {
+    id: "ms",
+    title: "Master's Students",
+    icon: "📖",
+    description:
+      "We welcome MS students at our institution who are interested in conducting research in Physical AI. MS students typically engage in a focused research project over 1–2 semesters, often leading to a thesis or publication.",
+    background: [
+      "Enrolled in the MS program at our department",
+      "Strong background in ML, robotics, or controls",
+      "Ability to commit at least 20 hours/week to research",
+    ],
+    instructions:
+      "Current MS students should attend our lab meeting (open to all) and then email amorgan@university.edu with a brief description of your background and research interests.",
+  },
+  {
+    id: "undergrad",
+    title: "Undergraduate Researchers",
+    icon: "⚙️",
+    description:
+      "We offer undergraduate research opportunities for exceptional students who want hands-on experience in a research lab. Projects may involve hardware design, software engineering, data collection, or literature review.",
+    background: [
+      "Strong academic record (GPA ≥ 3.5 preferred)",
+      "Programming skills in Python and/or C++",
+      "Genuine curiosity about robotics or AI",
+      "Ability to commit at least 10 hours/week",
+    ],
+    instructions:
+      "Email amorgan@university.edu with subject \"[Undergrad Research] Your Name\" including your CV, current transcript, and a short paragraph on why you're interested in Physical AI.",
+  },
+];
+
+export default function OpportunitiesPage() {
+  return (
+    <div className="pt-28 pb-20 px-6">
+      <div className="max-w-4xl mx-auto">
+        <SectionHeader
+          label="Join Us"
+          title="Open Positions"
+          description="We are always looking for passionate, curious, and collaborative researchers to join our team. We welcome applicants from diverse backgrounds."
+        />
+
+        <div className="space-y-10 mb-20">
+          {positions.map((pos) => (
+            <div
+              key={pos.id}
+              className="border border-neutral-200 rounded-xl p-8 hover:border-neutral-300 transition-colors"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">{pos.icon}</span>
+                <h2 className="text-lg font-semibold text-neutral-900">
+                  {pos.title}
+                </h2>
+              </div>
+              <p className="text-sm text-neutral-600 leading-relaxed mb-6">
+                {pos.description}
+              </p>
+              <div className="mb-6">
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">
+                  Desired Background
+                </h3>
+                <ul className="space-y-2">
+                  {pos.background.map((b) => (
+                    <li
+                      key={b}
+                      className="flex items-start gap-2 text-sm text-neutral-600"
+                    >
+                      <CheckCircle
+                        size={14}
+                        className="text-[#1e3a5f] mt-0.5 shrink-0"
+                      />
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-neutral-50 rounded-lg p-4">
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">
+                  How to Apply
+                </h3>
+                <p className="text-sm text-neutral-600 leading-relaxed">
+                  {pos.instructions}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="bg-[#1e3a5f] rounded-2xl p-10 text-white text-center">
+          <h2 className="text-2xl font-semibold mb-3">Ready to Apply?</h2>
+          <p className="text-white/70 text-sm leading-relaxed max-w-lg mx-auto mb-8">
+            We read every application carefully. If your background aligns with
+            our research, we will reach out for a conversation. Responses may
+            take 2–4 weeks.
+          </p>
+          <a
+            href="mailto:amorgan@university.edu"
+            className="inline-flex items-center gap-2 bg-white text-[#1e3a5f] px-7 py-3 rounded-lg text-sm font-semibold hover:bg-white/90 transition-colors"
+          >
+            <Mail size={16} />
+            amorgan@university.edu
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
