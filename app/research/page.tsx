@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { researchAreas } from "@/data/research";
 import Badge from "@/components/ui/Badge";
