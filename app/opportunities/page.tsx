@@ -62,12 +62,9 @@ export default function OpportunitiesPage() {
               key={pos.id}
               className="border border-neutral-200 rounded-xl p-6 hover:border-neutral-300 transition-colors"
             >
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-2xl">{pos.icon}</span>
-                <h2 className="text-lg font-semibold text-neutral-900">
-                  {pos.title}
-                </h2>
-              </div>
+              <h2 className="text-lg font-semibold text-neutral-900 mb-4">
+                {pos.title}
+              </h2>
               <p className="text-sm text-neutral-600 leading-relaxed mb-6">
                 {pos.description}
               </p>
