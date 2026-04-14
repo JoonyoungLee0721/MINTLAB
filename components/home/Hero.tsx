@@ -10,7 +10,7 @@ const pillars = [
     description:
       "Vision-language-action models, multi-agent planning, tactile sensing, and autonomous systems.",
     keywords: ["VLA Models", "Reinforcement Learning", "Computer Vision", "Humanoid"],
-    href: "/research#robot-intelligence",
+    href: "/research/robot-intelligence",
     image: "/MINTLAB/images/RobotMain.png",
   },
   {
@@ -18,7 +18,7 @@ const pillars = [
     description:
       "AI-driven wearable sensors for human pose estimation, assistive robotics, and healthcare monitoring.",
     keywords: ["Exoskeleton", "IMU", "Rehabilitation", "Healthcare"],
-    href: "/research#healthcare-intelligence",
+    href: "/research/healthcare-intelligence",
     image: "/MINTLAB/images/Wearable.png",
   },
 ];

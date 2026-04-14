@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { researchAreas } from "@/data/research";
 import Badge from "@/components/ui/Badge";
+import ResearchToggle from "@/components/ui/ResearchToggle";
 
 interface VideoItem {
   src: string;
@@ -20,6 +21,7 @@ const areaVideos: Record<string, VideoItem[]> = {
     { src: "/MINTLAB/images/TactileDEMO.mp4", label: "Robotic Manipulation with Tactile Sensor" },
     { src: "/MINTLAB/images/HumanoidDEMO.mp4", label: "Humanoid Control" },
     { src: "/MINTLAB/images/PocketRacer.mp4", label: "Autonomous Vehicles and Racing" },
+    { src: "/MINTLAB/images/PWD.mp4", label: "Reinforcement Learning for Dynamic Control" },
   ],
 };
 
@@ -49,6 +51,8 @@ export default async function ResearchDetailPage({ params }: Props) {
   return (
     <div className="pt-24 pb-8 px-6">
       <div className="max-w-[68.5rem] mx-auto">
+        <ResearchToggle currentId={id} />
+
         <h1 className="text-3xl font-bold text-neutral-900 mb-6">
           {area.title}
         </h1>
@@ -102,7 +106,6 @@ export default async function ResearchDetailPage({ params }: Props) {
             </Badge>
           ))}
         </div>
-
       </div>
     </div>
   );
