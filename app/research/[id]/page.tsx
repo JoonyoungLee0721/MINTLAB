@@ -17,11 +17,12 @@ const areaVideos: Record<string, VideoItem[]> = {
     { src: "/MINTLAB/images/Humanoid_IMU_Teleoperation_DEMO.mp4", label: "Humanoid IMU Teleoperation" },
   ],
   "robot-intelligence": [
-    { src: "/MINTLAB/images/VLA_DEMO.mp4", label: "Vision-Language-Action Model" },
-    { src: "/MINTLAB/images/TactileDEMO.mp4", label: "Robotic Manipulation with Tactile Sensor" },
     { src: "/MINTLAB/images/HumanoidDEMO.mp4", label: "Humanoid Control" },
-    { src: "/MINTLAB/images/PocketRacer.mp4", label: "Autonomous Vehicles and Racing" },
+    { src: "/MINTLAB/images/VLA_DEMO.mp4", label: "Vision-Language-Action Model" },
     { src: "/MINTLAB/images/PWD.mp4", label: "Reinforcement Learning for Dynamic Control" },
+    { src: "/MINTLAB/images/TactileDEMO.mp4", label: "Robotic Manipulation with Tactile Sensor" },
+    { src: "/MINTLAB/images/PocketRacer.mp4", label: "Autonomous Vehicles and Racing" },
+    
   ],
 };
 
