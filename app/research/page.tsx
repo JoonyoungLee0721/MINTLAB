@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { researchAreas } from "@/data/research";
 import Badge from "@/components/ui/Badge";
@@ -47,16 +47,28 @@ const areaVideos: Record<string, VideoItem[]> = {
 
 export default function ResearchPage() {
   const [activeTab, setActiveTab] = useState<Tab>("main");
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 100);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="pt-24 pb-8 px-6">
       <div className="max-w-[68.5rem] mx-auto">
-        <div className="mb-6 flex items-baseline justify-between">
+        {/* Sticky sub-header: title + toggle */}
+        <div
+          className={`sticky top-16 z-30 -mx-6 px-6 py-4 mb-2 flex items-baseline justify-between bg-white/80 backdrop-blur-sm transition-opacity duration-500 ${
+            isScrolled ? "opacity-0 hover:opacity-100" : "opacity-100"
+          }`}
+        >
           <h2 className="text-3xl font-semibold text-neutral-900">Research Areas</h2>
-          <div className="flex items-center gap-1 text-sm text-neutral-400">
+          <div className="flex flex-col md:flex-row items-end md:items-center gap-0 md:gap-1 text-sm text-neutral-400">
             {tabs.map((tab, i) => (
               <span key={tab.key} className="flex items-center">
-                {i > 0 && <span className="mx-1">/</span>}
+                {i > 0 && <span className="mx-1 hidden md:inline">/</span>}
                 <button
                   onClick={() => setActiveTab(tab.key)}
                   className={

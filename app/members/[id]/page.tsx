@@ -47,7 +47,7 @@ export default async function MemberProfilePage({ params }: Props) {
                 src={person.photo}
                 alt={person.name}
                 fill
-                className="object-cover object-top"
+                className="object-cover object-[center_15%]"
               />
             </div>
           )}

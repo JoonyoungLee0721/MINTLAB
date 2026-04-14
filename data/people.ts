@@ -47,6 +47,7 @@ export const people: Person[] = [
     keywords: ["Machine Learning", "Computer Vision", "Robotics", "Digital Healthcare"],
     email: "daekyum@korea.ac.kr",
     photo: "/MINTLAB/images/ProfessorDaekyumKim.jpg",
+
     hasProfile: true,
     title: "Assistant Professor",
     affiliations: [
@@ -93,6 +94,7 @@ export const people: Person[] = [
     role: "Postdoc",
     keywords: ["Soft Robotics", "Wearable AI", "Computer Vision", "Machine Learning"],
     photo: "/MINTLAB/images/PostdocHochangLee.jpg",
+
     hasProfile: true,
     title: "Postdoctoral Research Fellow",
     affiliations: [
@@ -116,6 +118,7 @@ export const people: Person[] = [
     role: "PhD Student",
     keywords: ["Robot Intelligence"],
     photo: "/MINTLAB/images/PhdJoonyoungLee.jpg",
+
   },
   // ── Integrated MS/PhD ───────────────────────────────────────────────────────
   {
@@ -131,13 +134,6 @@ export const people: Person[] = [
     role: "Integrated MS/PhD",
     keywords: ["Healthcare Intelligence"],
     photo: "/MINTLAB/images/IntegratedSuyeongLee.png",
-  },
-  {
-    id: "byeonggwan-kang",
-    name: "Byeonggwan Kang",
-    role: "Integrated MS/PhD",
-    keywords: ["Robot Intelligence"],
-    photo: "/MINTLAB/images/IntegratedByeongwanKang_2.png",
   },
   {
     id: "younghoon-bae",
@@ -166,13 +162,14 @@ export const people: Person[] = [
     role: "Integrated MS/PhD",
     keywords: ["Robot Intelligence"],
     photo: "/MINTLAB/images/InternYoungseokKwon.jpg",
+
   },
   {
     id: "dongwoo-kim",
     name: "Dongwoo Kim",
     role: "Integrated MS/PhD",
     keywords: ["Robot Intelligence"],
-    photo: "/MINTLAB/images/InternDongwooKim.jpg",
+    photo: "/MINTLAB/images/IntegratedDongwooKim.jpg",
   },
   {
     id: "seongyoon-kim",
@@ -204,11 +201,19 @@ export const people: Person[] = [
     photo: "/MINTLAB/images/MasterSuninBaek.jpg",
   },
   {
+    id: "byeonggwan-kang",
+    name: "Byeonggwan Kang",
+    role: "MS Student",
+    keywords: ["Robot Intelligence"],
+    photo: "/MINTLAB/images/MasterByeonggwanKang.jpg",
+  },
+  {
     id: "jinho-choi",
     name: "Jinho Choi",
     role: "MS Student",
     keywords: ["Robot Intelligence"],
     photo: "/MINTLAB/images/MasterJinhoChoi.jpg",
+
   },
   {
     id: "woojin-kwon",
@@ -266,6 +271,7 @@ export const people: Person[] = [
     role: "Undergraduate",
     keywords: ["Robot Intelligence"],
     photo: "/MINTLAB/images/InternYujinCho.jpg",
+
   },
   {
     id: "jimin-yun",
@@ -285,7 +291,7 @@ export const people: Person[] = [
     id: "yelin-heo",
     name: "Yelin Heo",
     role: "Undergraduate",
-    keywords: ["Healthcare Intelligence"],
+    keywords: ["Robot Intelligence"],
     photo: "/MINTLAB/images/InternYelinHeo.jpg",
   },
   {
@@ -308,6 +314,7 @@ export const people: Person[] = [
     role: "Undergraduate",
     keywords: ["Healthcare Intelligence"],
     photo: "/MINTLAB/images/InternDongnyeomJe.png",
+
   },
   {
     id: "seungmin-lee",
@@ -329,6 +336,7 @@ export const people: Person[] = [
     role: "Undergraduate",
     keywords: ["Robot Intelligence"],
     photo: "/MINTLAB/images/InternHwanheeJu.jpg",
+
   },
   {
     id: "dongmin-jo",
@@ -350,6 +358,7 @@ export const people: Person[] = [
     role: "Undergraduate",
     keywords: ["Healthcare Intelligence"],
     photo: "/MINTLAB/images/InternChanHyeokLee.jpg",
+
   },
   // ── Alumni ──────────────────────────────────────────────────────────────────
   {

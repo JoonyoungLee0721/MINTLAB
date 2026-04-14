@@ -56,7 +56,7 @@ export default function MembersPage() {
                               src={person.photo}
                               alt={`Photo of ${person.name}`}
                               fill
-                              className="object-cover object-top"
+                              className="object-cover object-[center_15%]"
                             />
                           </div>
                         ) : (
