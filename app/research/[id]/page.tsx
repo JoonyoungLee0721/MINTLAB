@@ -11,9 +11,9 @@ interface VideoItem {
 
 const areaVideos: Record<string, VideoItem[]> = {
   "healthcare-intelligence": [
-    { src: "/MINTLAB/images/SparseIMUs.mp4", label: "Pose Estimation using Sparse IMUs" },
-    { src: "/MINTLAB/images/AnkleExosuit.mp4", label: "Ankle Exosuit for Post-Stroke Rehabilitation" },
     { src: "/MINTLAB/images/IntentionDetection.mp4", label: "Intention Detection for Wearable Robot Hand" },
+    { src: "/MINTLAB/images/AnkleExosuit.mp4", label: "Ankle Exosuit for Post-Stroke Rehabilitation" },
+    { src: "/MINTLAB/images/SparseIMUs.mp4", label: "Pose Estimation using Sparse IMUs" },
     { src: "/MINTLAB/images/Humanoid_IMU_Teleoperation_DEMO.mp4", label: "Humanoid IMU Teleoperation" },
   ],
   "robot-intelligence": [
