@@ -15,7 +15,7 @@ const tabs: { key: Tab; label: string }[] = [
 
 const areaImages: Record<string, string> = {
   "healthcare-intelligence": "/MINTLAB/images/Wearable.png",
-  "robot-intelligence": "/MINTLAB/images/3DRecon.jpg",
+  "robot-intelligence": "/MINTLAB/images/RobotResearch.png",
 };
 
 const areaSummary: Record<string, string> = {
@@ -42,6 +42,7 @@ const areaVideos: Record<string, VideoItem[]> = {
     { src: "/MINTLAB/images/TactileDEMO.mp4", label: "Robotic Manipulation with Tactile Sensor" },
     { src: "/MINTLAB/images/HumanoidDEMO.mp4", label: "Humanoid Control" },
     { src: "/MINTLAB/images/PocketRacer.mp4", label: "Autonomous Vehicles and Racing" },
+    { src: "/MINTLAB/images/PWD.mp4", label: "Humanoid Locomotion" },
   ],
 };
 
