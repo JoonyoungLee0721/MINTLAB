@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Learning Based Lower Limb Joint Kinematic Estimation Using Open Source IMU Data">
+  <meta name="keywords" content="Lower-Limb Joint Kinematics, Transfer Learning, Gait Analysis">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Based Lower Limb Joint Kinematic Estimation Using Open Source IMU Data</title>
+
+  
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://mintlabkorea.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://mintlabkorea.github.io/LLJKE">
+            Learning Based Lower Limb Joint Kinematic Estimation Using Open Source IMU Data
+          </a>
+          <a class="navbar-item" href="https://mintlabkorea.github.io/MUST">
+            MUST: Smartwatch-based Multimodal Framework for Predicting Driver State and Takeover Performance
+          </a>
+          <a class="navbar-item" href="https://mintlabkorea.github.io/PrintExo">
+            PrintExo: An Open-Source, Shoe-Agnostic, 3D-Printable Ankle Exoskeleton for Accessible Locomotion Research
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Learning Based Lower Limb Joint Kinematic Estimation Using Open Source IMU Data</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.daekyumkim.com/members/students">Benjamin Hur</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.daekyumkim.com/members/students">Sunin Baek</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://metamobility.cmu.edu/people/">Inseung Kang</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.daekyumkim.com/members/professor">Daeykum Kim</a><sup>1,2</sup></span><br>
+          </div>
+
+          <div class="is-size-7 publication-authors">
+            <span class="author-block"><br><sup>1 </sup>Korea University, School of Mechanical Engineering,</span><br>
+            <span class="author-block"><sup>2 </sup>Korea University, School of Smart Mobility,</span><br>
+            <span class="author-block"><sup>3 </sup>Carnegie Mellon University, Department of Mechanical Engineering</span><br>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+
+              
+              
+
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="./static/files/s41598-025-89716-4.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <!-- arXiv
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              -->
+
+              <!-- Video Link. 
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              -->
+
+              <!-- GitHub Link. -->
+              <span class="link-block">
+                <a href="https://github.com/mintlabkorea/Learning-Based-Lower-Limb-Joint-Kinematic-Estimation-Using-Open-Source-IMU-Data"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
+                  </a>
+              </span>
+
+              <!-- Code Link.
+              <span class="link-block">
+                <a href="https://github.com/mintlabkorea/Learning-Based-Lower-Limb-Joint-Kinematic-Estimation-Using-Open-Source-IMU-Data"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa-solid fa-code"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              -->
+
+
+              <!-- Dataset Link.
+              <span class="link-block">
+                <a href="https://github.com/mintlabkorea/Learning-Based-Lower-Limb-Joint-Kinematic-Estimation-Using-Open-Source-IMU-Data/tree/main/Data"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span>
+              -->
+
+              <!-- Web Link. -->
+              <span class="link-block">
+                <a href="https://www.nature.com/articles/s41598-025-89716-4"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-paperclip"></i>
+                  </span>
+                  <span>url</span>
+                </a>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cover Video
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/example.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf"> ~~~~~~
+      </h2>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- Cover Image -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/fig1.png" alt="Teaser Image" style="width: 100%; height: auto;">
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This study introduces a deep learning framework for estimating lower-limb joint kinematics using inertial measurement units
+            (IMUs). While deep learning methods avoid sensor drift, extensive calibration, and complex setup procedures, they require
+            substantial data. To meet this demand, we leveraged an open-source dataset to develop and evaluate three training approaches.
+            The first involved training a model exclusively on data from a single user, resulting in high accuracy for that individual only. The
+            second approach trained a model on data from multiple users to generalize across individuals; however, demonstrated lower
+            accuracy due to variations in gait patterns across users. The third approach added transfer learning to the second, improving
+            estimation accuracy for new users through fine-tuning with a small portion of their data. This model overcame the limitations of
+            the previous methods’ dependency on extensive data collection, and achieved comparable performance to inverse kinematics,
+            making it an effective solution for diverse populations. Additionally, our analysis on IMU combinations suggests that IMUs
+            placed on the femur and calcaneus are the best for most cases. This framework not only reduces the need for extensive data
+            collection but also enhances personalized gait analysis, enabling more efficient and accessible applications in both clinical
+            assessments and real-world environments for broader use.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video.
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/{paper video link}"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    -->
+
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{hur2025LLJKE,
+  author    = {Hur, Benjamin and Baek, Sunin and Kang, Inseung and Kim, Daekyum},
+  title     = {Learning Based Lower Limb Joint Kinematic Estimation Using Open Source IMU Data},
+  journal   = {Scientific Reports},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://mintlabkorea.github.io/">
+         <i class="fas fa-home"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/mintlabkorea" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            © <script>document.write(new Date().getFullYear());</script> Movement Intelligence Laboratory, Korea University.  
+            Based on <a href="https://nerfies.github.io/" target="_blank">Nerfies</a>,  
+            licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

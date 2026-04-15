@@ -67,7 +67,7 @@ export const publications: Publication[] = [
     tags: ["IMU", "Kinematics", "Machine Learning"],
     links: {
       paper: "https://www.nature.com/articles/s41598-025-89716-4",
-      project: "https://mintlabkorea.github.io/LLJKE/",
+      project: "/MINTLAB/LLJKE/index.html",
     },
     note: "#Correspondence",
   },
