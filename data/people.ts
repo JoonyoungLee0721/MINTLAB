@@ -150,8 +150,8 @@ export const people: Person[] = [
     photo: "/MINTLAB/images/IntegratedKeunhoSong.jpg",
   },
   {
-    id: "yuhyun-lee",
-    name: "Yuhyun Lee",
+    id: "yuhyeon-lee",
+    name: "Yuhyeon Lee",
     role: "Integrated MS/PhD",
     keywords: ["Healthcare Intelligence"],
     photo: "/MINTLAB/images/IntegratedYuhyunLee.jpg",
