@@ -12,6 +12,7 @@ const pillars = [
     keywords: ["VLA Models", "Reinforcement Learning", "Computer Vision", "Humanoid"],
     href: "/research/robot-intelligence",
     image: "/MINTLAB/images/RobotMain.png",
+    fit: "cover" as const,
   },
   {
     title: "Healthcare Intelligence",
@@ -20,6 +21,7 @@ const pillars = [
     keywords: ["Exoskeleton", "IMU", "Rehabilitation", "Healthcare"],
     href: "/research/healthcare-intelligence",
     image: "/MINTLAB/images/Wearable.png",
+    fit: "contain" as const,
   },
 ];
 
@@ -107,7 +109,7 @@ export default function Hero() {
                     src={pillar.image}
                     alt={pillar.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className={`${pillar.fit === "contain" ? "object-contain" : "object-cover"} group-hover:scale-105 transition-transform duration-500`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   <h3 className="absolute bottom-4 left-5 text-2xl sm:text-3xl font-bold text-white">

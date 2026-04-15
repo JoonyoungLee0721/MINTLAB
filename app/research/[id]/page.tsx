@@ -13,12 +13,13 @@ const areaVideos: Record<string, VideoItem[]> = {
   "healthcare-intelligence": [
     { src: "/MINTLAB/images/IntentionDetection.mp4", label: "Intention Detection for Wearable Robot Hand" },
     { src: "/MINTLAB/images/AnkleExosuit.mp4", label: "Ankle Exosuit for Post-Stroke Rehabilitation" },
+    { src: "/MINTLAB/images/TOR.mp4", label: "Driver State Prediction for Takeover" },
     { src: "/MINTLAB/images/SparseIMUs.mp4", label: "Pose Estimation using Sparse IMUs" },
     { src: "/MINTLAB/images/Humanoid_IMU_Teleoperation_DEMO.mp4", label: "Humanoid IMU Teleoperation" },
   ],
   "robot-intelligence": [
     { src: "/MINTLAB/images/HumanoidDEMO.mp4", label: "Humanoid Control" },
-    { src: "/MINTLAB/images/VLA_DEMO.mp4", label: "Vision-Language-Action Model" },
+    { src: "/MINTLAB/images/VLA.mp4", label: "Vision-Language-Action Model" },
     { src: "/MINTLAB/images/PWD.mp4", label: "Reinforcement Learning for Dynamic Control" },
     { src: "/MINTLAB/images/TactileDEMO.mp4", label: "Robotic Manipulation with Tactile Sensor" },
     { src: "/MINTLAB/images/PocketRacer.mp4", label: "Autonomous Vehicles and Racing" },
@@ -66,15 +67,17 @@ export default async function ResearchDetailPage({ params }: Props) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
             {areaVideos[area.id].map((video) => (
               <div key={video.src} className="rounded-xl overflow-hidden border border-neutral-200">
-                <video
-                  className="w-full"
-                  controls
-                  muted
-                  playsInline
-                  preload="auto"
-                >
-                  <source src={video.src} type="video/mp4" />
-                </video>
+                <div className="aspect-video bg-black">
+                  <video
+                    className="w-full h-full object-contain"
+                    controls
+                    muted
+                    playsInline
+                    preload="auto"
+                  >
+                    <source src={video.src} type="video/mp4" />
+                  </video>
+                </div>
                 <p className="p-3 text-sm font-medium text-neutral-700 text-center">
                   {video.label}
                 </p>
