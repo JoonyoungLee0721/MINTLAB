@@ -28,7 +28,7 @@ export const researchAreas: ResearchArea[] = [
   },
   {
     id: "healthcare-intelligence",
-    title: "Healthcare Intelligence",
+    title: "Wearable & Healthcare",
     description:
       "We develop AI-driven approaches for continuous health monitoring and assistive robotics. By combining wearable sensor data (IMU, EMG, pressure insoles) with foundation models, we enable real-time estimation of body kinematics, kinetics, and activity states across everyday settings. These capabilities power adaptive control of exoskeletons and wearable robotic systems — interpreting user intent and delivering coordinated assistance for rehabilitation and mobility enhancement. Our world models learn to predict human movement dynamics, enabling proactive and personalized interventions.",
     contributions: [

@@ -125,21 +125,21 @@ export const people: Person[] = [
     id: "seokyong-sheem",
     name: "Seokyong Sheem",
     role: "Integrated MS/PhD",
-    keywords: ["Healthcare Intelligence"],
+    keywords: ["Wearable & Healthcare"],
     photo: "/MINTLAB/images/IntegratedSeokyongSheem.jpg",
   },
   {
     id: "suyeong-lee",
     name: "Suyeong Lee",
     role: "Integrated MS/PhD",
-    keywords: ["Healthcare Intelligence"],
+    keywords: ["Wearable & Healthcare"],
     photo: "/MINTLAB/images/IntegratedSuyeongLee.png",
   },
   {
     id: "younghoon-bae",
     name: "Younghoon Bae",
     role: "Integrated MS/PhD",
-    keywords: ["Healthcare Intelligence"],
+    keywords: ["Wearable & Healthcare"],
     photo: "/MINTLAB/images/IntegratedYounghoonBae.jpg",
   },
   {
@@ -153,7 +153,7 @@ export const people: Person[] = [
     id: "yuhyeon-lee",
     name: "Yuhyeon Lee",
     role: "Integrated MS/PhD",
-    keywords: ["Healthcare Intelligence"],
+    keywords: ["Wearable & Healthcare"],
     photo: "/MINTLAB/images/IntegratedYuhyunLee.jpg",
   },
   {
@@ -175,7 +175,7 @@ export const people: Person[] = [
     id: "seongyoon-kim",
     name: "Seongyoon Kim",
     role: "Integrated MS/PhD",
-    keywords: ["Healthcare Intelligence"],
+    keywords: ["Wearable & Healthcare"],
     photo: "/MINTLAB/images/InternSeongyoonKim.jpg",
   },
   {
@@ -197,7 +197,7 @@ export const people: Person[] = [
     id: "sunin-baek",
     name: "Sunin Baek",
     role: "MS Student",
-    keywords: ["Healthcare Intelligence"],
+    keywords: ["Wearable & Healthcare"],
     photo: "/MINTLAB/images/MasterSuninBaek.jpg",
   },
   {
@@ -219,7 +219,7 @@ export const people: Person[] = [
     id: "woojin-kwon",
     name: "Woojin Kwon",
     role: "MS Student",
-    keywords: ["Healthcare Intelligence"],
+    keywords: ["Wearable & Healthcare"],
     photo: "/MINTLAB/images/MasterWoojinKwon.jpg",
   },
   {
@@ -298,7 +298,7 @@ export const people: Person[] = [
     id: "minji-kim",
     name: "Minji Kim",
     role: "Undergraduate",
-    keywords: ["Healthcare Intelligence"],
+    keywords: ["Wearable & Healthcare"],
     photo: "/MINTLAB/images/InternMinjiKim.jpg",
   },
   {
@@ -312,7 +312,7 @@ export const people: Person[] = [
     id: "dongnyeom-je",
     name: "Dongnyeom Je",
     role: "Undergraduate",
-    keywords: ["Healthcare Intelligence"],
+    keywords: ["Wearable & Healthcare"],
     photo: "/MINTLAB/images/InternDongnyeomJe.png",
 
   },
@@ -327,7 +327,7 @@ export const people: Person[] = [
     id: "junhyeok-seo",
     name: "Junhyeok Seo",
     role: "Undergraduate",
-    keywords: ["Healthcare Intelligence"],
+    keywords: ["Wearable & Healthcare"],
     photo: "/MINTLAB/images/InternJunhyeokSeo.jpg",
   },
   {
@@ -349,14 +349,14 @@ export const people: Person[] = [
     id: "yushin-cho",
     name: "Yushin Cho",
     role: "Undergraduate",
-    keywords: ["Healthcare Intelligence"],
+    keywords: ["Wearable & Healthcare"],
     photo: "/MINTLAB/images/InternYushinCho.jpg",
   },
   {
     id: "chanhyeok-lee",
     name: "Chanhyeok Lee",
     role: "Undergraduate",
-    keywords: ["Healthcare Intelligence"],
+    keywords: ["Wearable & Healthcare"],
     photo: "/MINTLAB/images/InternChanHyeokLee.jpg",
 
   },
@@ -365,7 +365,7 @@ export const people: Person[] = [
     id: "sunyoung-hur",
     name: "Sunyoung Hur",
     role: "Alumni",
-    keywords: ["Healthcare Intelligence"],
+    keywords: ["Wearable & Healthcare"],
     alumniNote: "Graduate Intern",
   },
 ];

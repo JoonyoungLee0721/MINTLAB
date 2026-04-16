@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const tabs = [
-  { id: "robot-intelligence", label: "Robot" },
-  { id: "healthcare-intelligence", label: "Healthcare" },
+  { id: "robot-intelligence", label: "Robot Intelligence" },
+  { id: "healthcare-intelligence", label: "Wearable & Healthcare" },
 ];
 
 export default function ResearchToggle({ currentId }: { currentId: string }) {

@@ -15,7 +15,7 @@ const pillars = [
     fit: "cover" as const,
   },
   {
-    title: "Healthcare Intelligence",
+    title: "Wearable & Healthcare",
     description:
       "AI-driven wearable sensors for human pose estimation, assistive robotics, and healthcare monitoring.",
     keywords: ["Exoskeleton", "IMU", "Rehabilitation", "Healthcare"],
@@ -52,7 +52,7 @@ export default function Hero() {
             <span className="font-medium text-[#2d6e3a]">computer vision</span>.
             We bridge{" "}
             <span className="font-semibold text-neutral-800">
-              healthcare intelligence
+              wearable & healthcare
             </span>{" "}
             and{" "}
             <span className="font-semibold text-neutral-800">

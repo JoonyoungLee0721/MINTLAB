@@ -19,7 +19,7 @@ const navLinks = [
 
 const researchSubLinks = [
   { href: "/research/robot-intelligence", label: "Robot Intelligence" },
-  { href: "/research/healthcare-intelligence", label: "Healthcare Intelligence" },
+  { href: "/research/healthcare-intelligence", label: "Wearable & Healthcare" },
 ];
 
 export default function Header() {
