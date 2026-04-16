@@ -52,7 +52,7 @@ export default function Hero() {
             <span className="font-medium text-[#2d6e3a]">computer vision</span>.
             We bridge{" "}
             <span className="font-semibold text-neutral-800">
-              wearable & healthcare
+              healthcare intelligence
             </span>{" "}
             and{" "}
             <span className="font-semibold text-neutral-800">
